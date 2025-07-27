@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <title>aicrimereport</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap1.css')}}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link type="text/css" href="{{url_for('static',filename='css/style1.css')}}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link type="text/css" href="{{url_for('static',filename='css/responsive.css')}}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <!-- <img src="images/hero-bg.jpg" alt=""> -->
+        <img src="{{url_for('static',filename='images/hero-bg.jpg')}}"  >
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            <a href="" class="contact_link1">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                India
+              </span>
+            </a>
+            <a href="" class="contact_link2">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : 011-23469518, 23469718
+              </span>
+            </a>
+            <a href="" class="contact_link3">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                jtcp-crime@delhipolice.gov.in
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html"> Services </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="guard.html"> Guards </a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      CrimeTrend Analyzer <br>
+                      <span>
+                        AI Enabled Dashboard
+                      </span>
+                    </h1>
+                    <p>
+                      Unlock actionable insights with CrimeTrend Analyzer: the AI-powered dashboard that transforms crime data into strategic intelligence.
+                    </p>
+                    <div class="btn-box">
+                      <a type="submit" onclick="location.href='{{url_for('main')}}'" class="btn-1"> <strong>Previous Statistics</strong> </a>
+
+                      <a type="submit" onclick="location.href='{{url_for('prediction')}}'" class="btn-2"> <strong>Predictions</strong> </a>
+
+                      <a href="https://app.powerbi.com/reportEmbed?reportId=1ef924a4-2621-4b98-b72e-c6a1d9620fb8&autoAuth=true&ctid=f4b3a727-4338-4570-833f-458920095ef5" class="btn-1"> <strong>Power BI Report</strong> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      CrimeTrend Analyzer <br>
+                      <span>
+                        AI Enabled Dashboard
+                      </span>
+                    </h1>
+                    <p>
+                      Unlock actionable insights with CrimeTrend Analyzer: the AI-powered dashboard that transforms crime data into strategic intelligence.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> <strong>Previous Statistics</strong> </a>
+                      <a href="" class="btn-2"> <strong>Current Statistics</strong> </a>
+                      <a href="" class="btn-1"> <strong>Power BI Report</strong> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      CrimeTrend Analyzer <br>
+                      <span>
+                        AI Enabled Dashboard
+                      </span>
+                    </h1>
+                    <p>
+                      Unlock actionable insights with CrimeTrend Analyzer: the AI-powered dashboard that transforms crime data into strategic intelligence.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> <strong>Previous Statistics</strong> </a>
+                      <a href="" class="btn-2"> <strong>Current Statistics</strong> </a>
+                      <a href="https://app.powerbi.com/reportEmbed?reportId=1ef924a4-2621-4b98-b72e-c6a1d9620fb8&autoAuth=true&ctid=f4b3a727-4338-4570-833f-458920095ef5" class="btn-1"> <strong>Power BI Report</strong> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container idicator_container">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div> -->
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img_container">
+            <div class="img-box">
+              <!-- <img src="images/about-img.jpg" alt="" /> -->
+              <img src="{{url_for('static',filename='images/about-img.jpg')}}"  >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="detail-box">
+            <div class="heading_container ">
+              <h2>
+                Who Are We?
+              </h2>
+            </div>
+            <p>
+              At CrimeTrend Analyzer, we are a team of dedicated data scientists, criminologists, and AI specialists committed to making India a safer place. Our mission is to leverage cutting-edge artificial intelligence and data analytics to provide deep insights into crime trends across the country. By analyzing vast amounts of crime data, we aim to empower law enforcement agencies, policymakers, and communities with the strategic intelligence needed to combat crime effectively. We believe in the power of data to drive positive change, and our dashboard is designed to be a pivotal tool in the fight against crime in India.
+            </p>
+            <div class="btn-box">
+              <!-- <a href="">
+                Read More
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- service section -->
+
+   
+  <!-- end service section -->
+
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container ">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Team Members
+        </h2>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="img-box">
+                <!-- <img src="images/sushilji.jpg" alt=""> -->
+                <img src="{{url_for('static',filename='images/sushilji.jpg')}}"  >
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Sushil Soni
+                </h4>
+                <p>
+                  Assistant Manager- Data Engineering | BI Solutions Architect | Service Delivery | Data Analytics | Data Management | Machine learning | Big Data Technologies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="box">
+              <div class="img-box">
+                <!-- <img src="images/sonu.jpeg" alt=""> -->
+                <img src="{{url_for('static',filename='images/sonu.jpeg')}}"  >
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Sonu Gupta
+                </h4>
+                <p>
+                  ML, AI, Deep Learning,BigData,Python,SQL,Numpy, Pandas, Seaborne,Matplotlib, Azure Data Factory, Azure Datalake, Azure Codmosdb, Data bricks, MS power BI, ,NLP, ARIMA, Time series Analysis, Tableau, Alterxy, Power Query
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="box">
+              <div class="img-box">
+                <!-- <img src="images/ranjeet.jpeg" alt=""> -->
+                <img src="{{url_for('static',filename='images/ranjeet.jpeg')}}"  >
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Ranjeet Prajapati
+                </h4>
+                <p>
+                  Data Scientist/ Assistant Manager || AI & ML MS power BI, ,NLP, ARIMA, Time series Analysis, Tableau, Alterxy, Power Query
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="contact_bg_box">
+      <div class="img-box">
+        <!-- <img src="images/contact-bg.jpg" alt=""> -->
+        <img src="{{url_for('static',filename='images/contact-bg.jpg')}}"  >
+      </div>
+    </div>
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Get In touch
+        </h2>
+      </div>
+      <div class="">
+        <div class="row">
+          <div class="col-md-7 mx-auto">
+            <form action="#">
+              <div class="contact_form-container">
+                <div>
+                  <div>
+                    <input type="text" placeholder="Full Name" />
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email " />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Phone Number" />
+                  </div>
+                  <div class="">
+                    <input type="text" placeholder="Message" class="message_input" />
+                  </div>
+                  <div class="btn-box ">
+                    <button type="submit">
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- team section -->
+
+  <!-- <section class="team_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Guards
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris
+          iaculis. Erat eget vitae malesuada, tortor tincidunt porta lorem lectus.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mx-auto ">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/t1.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Martin Anderson
+              </h5>
+              <h6 class="">
+                supervisor
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mx-auto ">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/t2.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Denny Butler
+              </h5>
+              <h6 class="">
+                supervisor
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mx-auto ">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/t3.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Nathan Mcpherson
+              </h5>
+              <h6 class="">
+                supervisor
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          View All
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- end team section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                CrimeTrend Analyzer
+              </span>
+            </a>
+            <p>
+              Unlock actionable insights with CrimeTrend Analyzer: the AI-powered dashboard that transforms crime data into strategic intelligence.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>
+              Useful Link
+            </h5>
+            <ul>
+              <li>
+                <a href="http://ncw.nic.in/ncw-cells/complaint-investigation-cell">
+                  National Commission for Women
+                </a>
+              </li>
+              <li>
+                <a href="https://cybercrime.gov.in/">
+                  National Cyber Crime Reporting Portal
+                </a>
+              </li>
+              <li>
+                <a href="https://ncpcr.gov.in/">
+                  National Commission for Protection of Child Rights
+                </a>
+              </li>
+              <li>
+                <a href="https://wcd.nic.in/">
+                  Ministry of Women and Child Development
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Contact Us
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Delhi, India
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : 011-23469518, 23469718
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                jtcp-crime@delhipolice.gov.in
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="#">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="https://www.facebook.com/">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://x.com/">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.youtube.com/">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="currentYear"></span> All Rights Reserved. Design by
+      <a href="https://html.design/">Sushil Soni</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{{url_for('static',filename='js/jquery-3.4.1.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/bootstrap.js')}}"></script>
+  <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+</body>
+
+</html>
